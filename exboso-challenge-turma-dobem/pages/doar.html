@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conecta do Bem: plataforma para centralizar doadores e parceiros da Turma do Bem.">
+  <title>Quero doar | Conecta do Bem</title>
+  <link rel="icon" type="image/svg+xml" href="../img/logo.svg">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho padrão (igual em todas as páginas) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Conecta do Bem" width="44" height="44">
+        <span>Conecta do Bem</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="doar.html" class="ativo" aria-current="page">Doar</a></li>
+        <li><a href="parceiros.html">Parceiros</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="integrantes.html">Quem somos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <section class="page-titulo">
+      <div class="container">
+        <h1>Quero doar</h1>
+        <p class="lead">Protótipo da jornada de doação para pessoa física. Nesta sprint o formulário é apenas visual.</p>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="secao">
+      <div class="container grid grid-2 alinhar-centro">
+        <div>
+          <h2>O problema que queremos resolver</h2>
+          <p>Quem não tem acesso ao dentista perde dentes, tem mais dificuldade para conseguir emprego e segue sem renda para tratar a saúde bucal. É o ciclo da pobreza.</p>
+          <p>Cada doação ajuda a interromper esse ciclo ao financiar o atendimento odontológico gratuito de jovens e mulheres.</p>
+        </div>
+        <ol class="ciclo">
+          <li>Não vai ao dentista</li>
+          <li>Perde os dentes</li>
+          <li>Não arruma um bom emprego</li>
+          <li>Não tem dinheiro</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Protótipo do formulário de doação -->
+    <section class="secao secao-clara">
+      <div class="container">
+        <h2>Protótipo da doação</h2>
+        <form class="form-doacao" action="#" method="get">
+          <fieldset>
+            <legend>1. Escolha o valor</legend>
+            <div class="opcoes">
+              <input type="radio" id="valor-30" name="valor" checked>
+              <label for="valor-30">R$ 30</label>
+              <input type="radio" id="valor-60" name="valor">
+              <label for="valor-60">R$ 60</label>
+              <input type="radio" id="valor-120" name="valor">
+              <label for="valor-120">R$ 120</label>
+              <input type="radio" id="valor-outro" name="valor">
+              <label for="valor-outro">Outro valor</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Escolha como doar</legend>
+            <div class="opcoes">
+              <input type="radio" id="forma-pix" name="forma" checked>
+              <label for="forma-pix">PIX</label>
+              <input type="radio" id="forma-boleto" name="forma">
+              <label for="forma-boleto">Boleto</label>
+              <input type="radio" id="forma-recorrente" name="forma">
+              <label for="forma-recorrente">Doação mensal</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Seus dados</legend>
+            <div class="campo">
+              <label for="doador-nome">Nome completo</label>
+              <input type="text" id="doador-nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="campo">
+              <label for="doador-email">E-mail</label>
+              <input type="email" id="doador-email" name="email" placeholder="voce@email.com">
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary" type="submit">Continuar para a doação</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Passo a passo -->
+    <section class="secao">
+      <div class="container">
+        <h2>Como funciona</h2>
+        <ol class="passos">
+          <li class="passo"><h3>Escolha</h3><p>Defina o valor e a forma de doação.</p></li>
+          <li class="passo"><h3>Identifique-se</h3><p>Informe nome e e-mail para receber o comprovante.</p></li>
+          <li class="passo"><h3>Confirme</h3><p>Pague por PIX ou boleto, ou ative a doação mensal.</p></li>
+          <li class="passo"><h3>Acompanhe</h3><p>Receba novidades sobre o impacto da sua doação.</p></li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé padrão (igual em todas as páginas) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-titulo">Conecta do Bem</p>
+        <p>Plataforma criada no Challenge FIAP 1TDS para apoiar a captação e o relacionamento da Turma do Bem.</p>
+      </div>
+      <div>
+        <p class="footer-titulo">Navegação</p>
+        <ul class="footer-links">
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+          <li><a href="doar.html">Quero doar</a></li>
+          <li><a href="parceiros.html">Quero ser parceiro</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-titulo">Contato</p>
+        <p>contato@conectadobem.exemplo</p>
+        <p><a href="contato.html">Fale com a equipe</a></p>
+      </div>
+    </div>
+    <p class="footer-copy">Projeto acadêmico FIAP – Challenge 1TDS – Sprint 1. Não é um site oficial da Turma do Bem.</p>
+  </footer>
+</body>
+</html>
